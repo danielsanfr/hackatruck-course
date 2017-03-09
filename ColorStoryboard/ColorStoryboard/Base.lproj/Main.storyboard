@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dQ1-j9-urP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lcN-ud-fgF">
+            <objects>
+                <viewController id="jTk-LP-TKM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fvu-5i-4Ku"/>
+                        <viewControllerLayoutGuide type="bottom" id="ycg-Rm-dML"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n3u-qd-XWw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="YwK-Ox-V8f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svy-Wz-mFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="151"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q6U-jo-NrT">
+            <objects>
+                <viewController id="B7d-pA-Rx8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mA3-ep-0zb"/>
+                        <viewControllerLayoutGuide type="bottom" id="gqw-7q-LaX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zV3-Gy-XF8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="k8L-hE-P7p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X16-os-YNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-810" y="618"/>
+        </scene>
+        <!--Color Selector-->
+        <scene sceneID="I7v-La-JE5">
+            <objects>
+                <viewController id="v4B-G8-Afw" customClass="SelectorColorViewController" customModule="ColorStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="axK-VO-L8p"/>
+                        <viewControllerLayoutGuide type="bottom" id="sSJ-4T-ini"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eF7-tP-7il">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPz-YW-1KN">
+                                <rect key="frame" x="16" y="96" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SPz-YW-1KN" firstAttribute="top" secondItem="axK-VO-L8p" secondAttribute="bottom" constant="32" id="FyO-dP-Dfp"/>
+                            <constraint firstItem="SPz-YW-1KN" firstAttribute="leading" secondItem="eF7-tP-7il" secondAttribute="leadingMargin" id="iSF-pX-fIa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SPz-YW-1KN" secondAttribute="trailing" id="trg-Pf-QCv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Color Selector" id="JGq-eN-eWl">
+                        <barButtonItem key="rightBarButtonItem" title="Select" id="eXI-VV-dbb">
+                            <connections>
+                                <segue destination="DpF-DB-wnZ" kind="show" identifier="showColorIdentifier" id="Ijd-Nd-qXw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="color" destination="SPz-YW-1KN" id="sGg-Rh-Gqk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qrf-RZ-GT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="-505.09745127436287"/>
+        </scene>
+        <!--Show Color View Controller-->
+        <scene sceneID="SuZ-RX-47c">
+            <objects>
+                <viewController id="DpF-DB-wnZ" customClass="ShowColorViewController" customModule="ColorStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pfe-0V-td4"/>
+                        <viewControllerLayoutGuide type="bottom" id="xXg-0C-T25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SZC-qA-yq6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIe-RZ-FFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944.8" y="-505.09745127436287"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="APW-XJ-p4v">
+            <objects>
+                <tabBarController id="dQ1-j9-urP" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="8f3-AR-vzp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hjr-Ep-zJg" kind="relationship" relationship="viewControllers" id="s7m-Dg-RvP"/>
+                        <segue destination="B7d-pA-Rx8" kind="relationship" relationship="viewControllers" id="yTf-FM-vCk"/>
+                        <segue destination="jTk-LP-TKM" kind="relationship" relationship="viewControllers" id="Wdu-tE-1gB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1j8-fb-lVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-809" y="-177"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u9b-v1-pIE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hjr-Ep-zJg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Xnz-qC-PqQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Uk-Hc-l35">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v4B-G8-Afw" kind="relationship" relationship="rootViewController" id="K1v-HR-3aN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y95-9M-pEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="-505.09745127436287"/>
+        </scene>
+    </scenes>
+</document>

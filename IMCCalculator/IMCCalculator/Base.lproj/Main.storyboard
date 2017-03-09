@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IMCCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qly-nj-LbR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Calculadora de IMC" id="UwM-h5-u6t"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZmB-ce-GfY">
+                                <rect key="frame" x="139" y="84" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ink-3s-cWx">
+                                <rect key="frame" x="139" y="130" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkd-Sc-fLZ">
+                                <rect key="frame" x="164" y="229" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTR-t1-mTb">
+                                <rect key="frame" x="164" y="178" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbQ-2S-4RB">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="X65-my-a6Z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KTR-t1-mTb" secondAttribute="trailing" id="3OI-ot-9YA"/>
+                            <constraint firstItem="ink-3s-cWx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7W1-FK-RWt"/>
+                            <constraint firstItem="rbQ-2S-4RB" firstAttribute="top" secondItem="pkd-Sc-fLZ" secondAttribute="bottom" constant="24" id="AuO-3M-pnq"/>
+                            <constraint firstItem="ZmB-ce-GfY" firstAttribute="top" secondItem="Qly-nj-LbR" secondAttribute="bottom" constant="16" id="DOV-AC-BJ8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pkd-Sc-fLZ" secondAttribute="trailing" id="FgL-RZ-VTc"/>
+                            <constraint firstItem="rbQ-2S-4RB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LSq-Ny-Sl0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rbQ-2S-4RB" secondAttribute="trailing" id="Q5t-cf-Ln0"/>
+                            <constraint firstItem="KTR-t1-mTb" firstAttribute="top" secondItem="ink-3s-cWx" secondAttribute="bottom" constant="8" id="SkB-dz-hx0"/>
+                            <constraint firstItem="pkd-Sc-fLZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U5a-Jj-vcF"/>
+                            <constraint firstItem="KTR-t1-mTb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aDt-5A-IIB"/>
+                            <constraint firstItem="ink-3s-cWx" firstAttribute="top" secondItem="ZmB-ce-GfY" secondAttribute="bottom" constant="8" id="bvw-N5-DI8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ink-3s-cWx" secondAttribute="trailing" id="gAq-wx-Sbb"/>
+                            <constraint firstItem="ZmB-ce-GfY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hVO-L9-MWh"/>
+                            <constraint firstItem="pkd-Sc-fLZ" firstAttribute="top" secondItem="KTR-t1-mTb" secondAttribute="bottom" constant="8" id="jFA-pw-HZu"/>
+                            <constraint firstItem="Qly-nj-LbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="m2D-S0-5qQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Qly-nj-LbR" secondAttribute="trailing" id="tCI-2G-uIU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZmB-ce-GfY" secondAttribute="trailing" id="vCU-Pg-hOZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
